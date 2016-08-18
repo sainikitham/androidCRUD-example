@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1b2ba4"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="30"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:gravity="center"
+            android:hint="Employee Name"
+            android:inputType="textPersonName"
+            android:textColor="#FF0000"
+            android:textColorHint="@android:color/black"
+            android:textSize="30sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#171d74"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/editTextDesg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="30"
+            android:gravity="center"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:hint="Designation"
+            android:inputType="textPersonName"
+            android:textColor="#d91414"
+            android:textColorHint="@android:color/black"
+            android:textSize="30sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#070a4e"
+        android:textColorHint="@android:color/black">
+
+        <EditText
+            android:id="@+id/editTextSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="30"
+            android:gravity="center"
+            android:digits="0123456789"
+            android:hint="Salary"
+            android:inputType="textPersonName"
+            android:textColor="#ec081e"
+            android:textColorHint="@android:color/black"
+            android:textSize="30sp" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Employee"
+        android:id="@+id/buttonAdd"
+        android:theme="@style/MyButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Employee"
+        android:id="@+id/buttonView"
+        android:theme="@style/MyButton"/>
+
+</LinearLayout>
